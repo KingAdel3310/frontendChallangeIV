@@ -1,0 +1,254 @@
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+.body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: var(--Light-Grayish-Blue);
+  padding: 0 1.5rem;
+}
+
+html,
+.body {
+  margin: 0;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 20.5rem;
+  background: #ffffff;
+  box-shadow: 0 2.5rem 2.5rem -0.625rem rgba(201, 213, 225, 0.503415);
+  border-radius: 0.625rem;
+  position: relative;
+}
+
+.image-section,
+.image {
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+
+.image {
+  height: 100%;
+}
+
+.text-section {
+  padding: 2.5rem 2rem 1.5rem;
+}
+
+h1 {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.0125em;
+}
+
+.text-section p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0%;
+  margin-bottom: 2.5rem;
+  line-height: 150%;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  max-width: 2.5rem;
+  border-radius: 2.5rem;
+}
+
+.author-info {
+  margin-right: 1rem;
+  padding-left: 3.4rem;
+}
+
+.author-info h2 {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.author-info .date {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--Grayish-Blue);
+  margin: 0;
+}
+.share-div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--Light-Grayish-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share-div:hover {
+  background-color: var(--Grayish-Blue);
+}
+
+.socials {
+  background-color: var(--Very-Dark-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 1rem 2rem;
+  width: 85%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.socials p {
+  color: var(--Grayish-Blue);
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0 1rem 0 0;
+}
+
+.icon-twitter {
+  width: 1.5rem;
+  height: 1rem;
+}
+
+.socials .icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-right: 3.5rem;
+}
+
+.hide {
+  visibility: visible;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--Light-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  top: -7px;
+}
+
+.hide:hover {
+  background-color: var(--Grayish-Blue);
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 48rem) {
+  .container {
+    flex-direction: row;
+    max-width: 46rem;
+    min-height: 18rem;
+  }
+
+  .text-section {
+    padding: 2rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    line-height: 160%;
+  }
+
+  .text-section p {
+    margin-bottom: 1.5rem;
+  }
+
+  .image-section .image {
+    max-width: 18rem;
+    min-height: 17.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+  }
+
+  .author-info {
+    margin-right: 10.0625rem;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+  .socials {
+    max-width: 15.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.625rem;
+    left: 75.2%;
+    bottom: 33%;
+  }
+
+  .socials::after {
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    margin-left: -0.625rem;
+    border-width: 0.75rem;
+    border-style: solid;
+    border-color: var(--Very-Dark-Grayish-Blue) transparent transparent
+      transparent;
+  }
+
+  .socials .icons {
+    margin-right: 0;
+  }
+}
